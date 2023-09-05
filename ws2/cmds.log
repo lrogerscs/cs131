@@ -1,0 +1,5 @@
+  159  cp /datasets/taxidata.tar.gz .
+  167  tar zxvf taxidata.tar.gz
+  204  grep "[^,]*,[^,]*,\"2019-03-12.*" 2019-03.csv | tail -20 > results.txt
+  206  grep "[^,]*,[^,]*,\"2019-03-12.*" 2019-03.csv | head -n -20 >> results.txt
+  214  wc -l results.txt
