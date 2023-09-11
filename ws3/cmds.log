@@ -1,0 +1,4 @@
+  315  cut -d "," -f 8 2019-01.csv > 2019-01-pulocationid.csv
+  330  sort 2019-01-pulocationid.csv | uniq -c | sort -k 1 -nr | head -n 3 > ws3.txt
+  333  cut -d "," -f 8 2019-02.csv > 2019-02-pulocationid.csv
+  338  sort 2019-02-pulocationid.csv | uniq -c | sort -k 1 -nr | head -n 3 >> ws3.txt

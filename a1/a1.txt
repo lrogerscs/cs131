@@ -1,0 +1,124 @@
+Note: This file contains answers related to outputs. If the answer is related to a command or not in the file, check cmds.log.
+
+2)
+echo $HOME output:
+/mnt/scratch/rogers23fa
+
+3)
+id output:
+uid=1133(rogers23fa) gid=1133(rogers23fa) groups=1133(rogers23fa)
+My uid is 1133 and I belong to the 1133 group.
+
+4)
+cd output:
+-bash: cd: temp/: Permission denied
+I could not cd into the directory.
+
+ls output:
+
+There was no output (listed no files)
+
+ls -l output:
+total 0
+There was nothing to show.
+
+touch output:
+touch: cannot touch 'temp/test.txt': Permission denied
+I was not allowed to create files under the directory.
+
+5)
+mv temp2 temp3/ output:
+
+There was no output for this command and temp2 was not moved to temp3. Upon executing the command, since temp2 was empty, the command simply renamed temp2 to temp3. Answers to next part in cmds.log.
+
+6)
+ls /proc/ output (some lines omitted):
+cpuinfo
+crypto
+devices
+
+...
+
+locks
+mdstat
+meminfo
+In this case, I believe memory info is contained "meminfo" and information about the cpu is contained in "cpuinfo"
+
+7)
+head /proc/meminfo output:
+MemTotal:       73080512 kB
+MemFree:         2286528 kB
+MemAvailable:   59378496 kB
+Buffers:          436864 kB
+Cached:         58175936 kB
+SwapCached:        21312 kB
+Active:         44329152 kB
+Inactive:       14918016 kB
+Active(anon):     442176 kB
+Inactive(anon):  1145792 kB
+The total memory is 73080512 kB.
+
+8)
+head /proc/cpuinfo output:
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 1
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+tail /proc/cpuinfo output:
+processor	: 255
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+timebase	: 512000000
+platform	: pSeries
+model		: IBM,8247-22L
+machine		: CHRP IBM,8247-22L
+MMU		: Hash
+cat /proc/cpuinfo output (some lines omitted):
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 1
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+...
+
+processor	: 254
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 255
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+timebase	: 512000000
+platform	: pSeries
+model		: IBM,8247-22L
+machine		: CHRP IBM,8247-22L
+MMU		: Hash
+As there are processors numbered 0-255, I believe that there are 256 processors on the server.
+The architecture name seems to be "POWER8" and the processor speed is listed as 3425 MHz, which is 3.425 GHz.
+
+9)
+head /etc/os-release output (some lines omitted):
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+...
+The version is listed as "8.6 (Ootpa)" and is found under /etc/os-release.
+
+10)
+ls -l /etc/os-release output:
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+From the line, it appears that everyone has been given "rwx," r standing for read, w standing for write, and x standing for execute.

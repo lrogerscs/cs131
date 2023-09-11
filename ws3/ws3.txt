@@ -1,0 +1,8 @@
+Top 3 locations in January 2019:
+ 332473 237.0
+ 323008 236.0
+ 312392 161.0
+Top 3 locations in February 2019:
+ 294584 237.0
+ 286773 161.0
+ 280640 236.0

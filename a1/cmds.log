@@ -1,0 +1,52 @@
+Note: This file contains the list of and the comments on relevant commands used and may not contain all answers to required questions. For more answers, check a1.txt.
+
+1)
+Relevant commands:
+  349  mkdir a1
+
+2)
+Relevant commands:
+  353  echo $HOME > a1.txt
+
+3)
+Relevant commands:
+  358  id >> a1.txt
+
+4)
+Relevant commands:
+  360  mkdir temp
+  362  chmod -x temp
+  365  cd temp/ 2>> a1.txt
+  367  ls temp >> a1.txt
+  370  ls -l temp >> a1.txt
+  379  touch temp/test.txt 2>> a1.txt
+
+5)
+Relevant commands:
+  392  mkdir temp2
+  393  mv temp2 temp3/
+  424  cp -r temp3 taxidata/
+You are allowed to cp a directory. I used -r to copy the entire directory.
+
+6)
+Relevant commands:
+  408  ls /proc/ >> a1.txt
+
+7)
+Relevant commands:
+  428  head /proc/meminfo >> a1.txt
+
+8)
+Relevant commands:
+  430  head /proc/cpuinfo >> a1.txt
+  432  tail /proc/cpuinfo >> a1.txt
+  434  cat /proc/cpuinfo >> a1.txt
+
+9)
+Relevant commands:
+  438  ls /etc/
+  440  head /etc/os-release >> a1.txt
+
+10)
+Relevant commands:
+  443  ls -l /etc/os-release >> a1.txt
