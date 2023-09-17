@@ -1,0 +1,6 @@
+  553  script cs131/ws4/ws4.txt
+  557  mkdir cs131/ws4/FARE
+  570  grep ".*,.*,.*,.*,.*,.*,.*,163.0,234.0.*" taxidata/2019-06.csv | cut -d "," -f 11 > cs131/ws4/FARE/163.0-234.0.txt
+  577  grep ".*,.*,.*,.*,.*,.*,.*,137.0,141.0.*" taxidata/2019-06.csv | cut -d "," -f 11 > cs131/ws4/FARE/137.0-141.0.txt
+  580  awk '{ total += $1; count++ } END { print total/count }' cs131/ws4/FARE/163.0-234.0.txt >> cs131/ws4/ws4.txt
+  581  awk '{ total += $1; count++ } END { print total/count }' cs131/ws4/FARE/137.0-141.0.txt >> cs131/ws4/ws4.txt

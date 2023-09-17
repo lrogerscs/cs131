@@ -1,0 +1,20 @@
+Testing l and w alias commands:
+Script started on 2023-09-17 00:31:55-04:00
+bash-4.4$ l
+total 1052112
+-rw-r--r-- 1 rogers23fa rogers23fa 991833345 Jul 31 14:03 2019-03.csv
+-rw-rw-r-- 1 rogers23fa rogers23fa  44666950 Sep 10 00:50 2019-01-pulocationid.csv
+-rw-rw-r-- 1 rogers23fa rogers23fa  40844038 Sep 10 17:47 2019-02-pulocationid.csv
+drwxr-xr-x 2 rogers23fa rogers23fa      4096 Sep 17 00:28 taxidata
+drwxrwxr-x 8 rogers23fa rogers23fa      4096 Sep 17 00:29 cs131
+bash-4.4$ w
+      6      47     381
+bash-4.4$ exit
+
+Script done on 2023-09-17 00:32:35-04:00
+
+Average of 163.0-234.0.txt:
+11.8744
+
+Average of 137.0-141.0:
+9.91833
