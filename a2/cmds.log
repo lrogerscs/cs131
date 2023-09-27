@@ -1,0 +1,30 @@
+Q1 commands:
+  856  grep "^[^,]*,\"2019-05-11.*" taxidata/2019-05.csv > 2019-05-11-pu.csv
+  857  cut -d "," -f 17 2019-05-11-pu.csv > 2019-05-11-totals.csv
+  859  awk '{ total += $1; count++ } END { print total/count }' 2019-05-11-totals.csv > a2.txt
+
+Q2 commands:
+  864  sort -k 1 -nr 2019-05-11-totals.csv | head -n 10 >> a2.txt
+
+Q3 commands:
+  867  grep "^[^,]*,[^,]*,[^,]*,[^0,1,2].0,.*" taxidata/2019-05.csv | cut -d "," -f 9 | sort | uniq -c | sort -k 1 -nr | head -n 10 >> a2.txt
+
+Q4 commands:
+  872  grep "^[^,]*,\"2019-05-20.*" taxidata/2019-05.csv | cut -d "," -f 8 | sort | uniq -c | sort -k 1 -nr | head -n 10 >> a2.txt
+  881  grep "^[^,]*,\"2019-05-20.*" taxidata/2019-05.csv > 2019-05-20.csv
+  885  grep "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,237.0,.*" 2019-05-20.csv | cut -d "," -f 9 | sort | uniq -c | sort -k 1 -nr | head -n 10 >> a2.txt
+
+Q5 commands:
+  888  cut -d "," -f 8 taxidata/2019-01.csv >> all-pulocation.csv
+  889  cut -d "," -f 8 taxidata/2019-02.csv >> all-pulocation.csv
+  890  cut -d "," -f 8 taxidata/2019-03.csv >> all-pulocation.csv
+  891  cut -d "," -f 8 taxidata/2019-04.csv >> all-pulocation.csv
+  892  cut -d "," -f 8 taxidata/2019-05.csv >> all-pulocation.csv
+  893  cut -d "," -f 8 taxidata/2019-06.csv >> all-pulocation.csv
+  894  cut -d "," -f 8 taxidata/2019-07.csv >> all-pulocation.csv
+  895  cut -d "," -f 8 taxidata/2019-08.csv >> all-pulocation.csv
+  896  cut -d "," -f 8 taxidata/2019-09.csv >> all-pulocation.csv
+  897  cut -d "," -f 8 taxidata/2019-10.csv >> all-pulocation.csv
+  898  cut -d "," -f 8 taxidata/2019-11.csv >> all-pulocation.csv
+  899  cut -d "," -f 8 taxidata/2019-12.csv >> all-pulocation.csv
+  914  sort all-pulocation.csv | uniq -c | sort -k 1 -nr | head -n 10 >> a2.txt

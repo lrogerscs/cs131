@@ -1,0 +1,70 @@
+Q1 output (average total amounts):
+17.8655
+The average amount was 17.8655.
+
+Q2 output (top 10 highest total amounts):
+1309.8
+600.3
+410.92
+400.3
+360.36
+350.3
+345.3
+326.6
+300.8
+291.36
+The highest total amount was 1309.8.
+
+Q3 output (top 10 locations for rides with 3+ customers in may 2019):
+  39909 236.0
+  37140 237.0
+  36990 161.0
+  33678 230.0
+  28506 170.0
+  27895 162.0
+  27485 48.0
+  26782 142.0
+  25051 239.0
+  24609 234.0
+
+Q4 output:
+(I was somewhat confused about this question's wording. I ultimately interpreted it as
+"find the most popular pickup location on may 20 2019. Then, find the most popular
+dropoff on may 20 2019 with that pickup location."
+I hope that this was correct.)
+(top ten pickup locations on may 20 2019)
+  12002 237.0
+  10887 161.0
+  10543 236.0
+   9683 132.0
+   9523 162.0
+   8663 186.0
+   8089 138.0
+   7875 230.0
+   7515 170.0
+   7145 142.0
+(top ten dropoff locations from 237.0 (#1 pickup on may 20 2019) on may 20 2019)
+   1911 236.0
+   1429 237.0
+    803 161.0
+    785 162.0
+    556 141.0
+    508 140.0
+    483 142.0
+    408 263.0
+    323 163.0
+    311 238.0
+So the most popular dropoff was 236.0.
+
+Q5 output (most popular pickup location all year):
+3641682 237.0
+3450649 161.0
+3291351 236.0
+3046788 162.0
+3027440 186.0
+2900733 230.0
+2729607 132.0
+2678275 48.0
+2604081 170.0
+2534767 234.0
+So, the most popular pickup location was 237.0.

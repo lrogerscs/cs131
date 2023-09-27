@@ -1,0 +1,5 @@
+Relevant console commands:
+  797  grep "^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,234.0,.*" taxidata/2019-08.csv | cut -d "," -f 9 | sort | uniq -c | sort -k 1 -nr | head -n 100 | cut -c9- > 234-top-do.csv
+  799  vi 234-do-loop.sh
+  800  chmod +x 234-do-loop.sh
+  808  ./234-do-loop.sh

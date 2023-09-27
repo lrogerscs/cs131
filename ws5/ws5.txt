@@ -1,0 +1,18 @@
+Checking entry count:
+Script started on 2023-09-26 18:32:32-04:00
+bash-4.4$ wc -l 234[K[K[Kdo234/1.0.txt
+13672 do234/1.0.txt
+bash-4.4$ wc -l do234/3.0.txt
+wc: do234/3.0.txt: No such file or directory
+bash-4.4$ wc -l do234/48.0.txt
+178473 do234/48.0.txt
+bash-4.4$ wc -l do32[K[K234/223.0.txt
+12206 do234/223.0.txt
+bash-4.4$ exit
+
+Script done on 2023-09-26 18:33:47-04:00
+
+So, 1.0.txt had 13672 entries.
+3.0.txt had 0 entries (was not a top 100 location).
+48.0.txt had 178473 entries.
+223.0.txt had 12206 entries.
