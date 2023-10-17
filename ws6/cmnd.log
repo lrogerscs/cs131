@@ -1,0 +1,4 @@
+Relevant commands:
+ 1025  sed -n '/^2.0.*/ p' taxidata/2019-11.csv > vendor2.csv
+ 1032  sed 's/[:"-]//g' taxidata/2019-11.csv > no-separators.csv
+ 1034  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
