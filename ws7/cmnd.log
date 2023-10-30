@@ -1,0 +1,5 @@
+Relevant commands:
+1)
+ 1012  awk -F "," '$17 >= 10 {print $14}' taxidata/2019-12.csv | sort | uniq -c > results.txt
+2)
+ 1014  sort -k 1 -nr results.txt | head -20 > ws7.txt
