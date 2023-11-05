@@ -1,0 +1,13 @@
+Relevant VM commands:
+1)
+ 1013  awk -f pu-avg-awk taxidata/2019-08.csv | sort -k 2 -nr | head -10 > a3.txt
+2)
+ 1023  awk -f pu-do-avg-awk taxidata/2019-05.csv | sort -k 3 -nr | head -1 >> a3.txt
+3)
+ 1029  awk -f pass-tip-avg-awk taxidata/2019-08.csv > pass-tip-avg.csv
+4)
+ 1036  awk -f dist-avg-awk taxidata/2019-08.csv > dist-avg.csv
+
+Awk scripts are provided in the folder containing this document.
+
+For gnuplot commands, see plotcmnds.log.

@@ -1,0 +1,13 @@
+BEGIN {
+   FS=","
+}
+{
+   sums[$8,$9]+=$17
+   nums[$8,$9]++
+}
+END {
+   for (i in sums) {
+      split(i,vals,SUBSEP)
+      print vals[1],vals[2],sums[vals[1],vals[2]]/nums[vals[1],vals[2]]
+   }
+}

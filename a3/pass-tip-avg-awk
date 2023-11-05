@@ -1,0 +1,13 @@
+BEGIN {
+   FS=","
+   OFS=","
+}
+{
+   sums[$4]+=$14
+   nums[$4]++
+}
+END {
+   for (i in sums) {
+      print i,sums[i]/nums[i]
+   }
+}
