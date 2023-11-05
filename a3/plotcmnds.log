@@ -1,0 +1,16 @@
+Relevant gnuplot commands:
+3)
+gnuplot> set auto x
+gnuplot> set style data histogram
+gnuplot> set style fill solid border -1
+gnuplot> set boxwidth 1
+gnuplot> set datafile separator ','
+gnuplot> set yrange[0:15]
+gnuplot> plot 'pass-tip-avg.dat' using 1:2:xtic(1) with boxes lc rgb 'gray'
+4)
+gnuplot> set style fill transparent solid 0.2 noborder
+gnuplot> set datafile separator ','
+gnuplot> set autoscale x
+gnuplot> set autoscale y
+gnuplot> set style circle radius 1
+gnuplot> plot 'dist-avg.dat' using 1:2 with circles lc rgb 'red'
