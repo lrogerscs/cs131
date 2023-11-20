@@ -1,0 +1,23 @@
+BEGIN {
+   FS = ","
+   FPAT = "([^,]+)|(\"[^\"]+\")"
+   OFS = ","
+}
+NR > 1 {
+   if ($19 == 0 && $20 == 0 && $21 == 0)
+      other++
+   else {
+      if ($21 == 1)
+         doctorate++
+      else if ($20 == 1)
+         master++
+      else if ($19 == 1)
+         bachelor++
+   }
+}
+END {
+   print "Other/Lower", other
+   print "Bachelor", bachelor
+   print "Master", master
+   print "Doctorate", doctorate
+}

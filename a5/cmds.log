@@ -1,0 +1,11 @@
+Commands relevant to understanding the process:
+ 1007  wget https://cdn.discordapp.com/attachments/829562644515389500/1176023480530124811/forbes_2640_billionaires.csv?ex=656d5c37&is=655ae737&hm=4e9974ef423bd46879328bdc2b61b267dcd8c74c3da1cccc48628239e4502a54&
+ 1011  mv 'forbes_2640_billionaires.csv?ex=656d5c37' b.csv
+ 1026  sed 's/\.[0-9]*//g' data/b.csv > data/b_no_decimal.csv
+ 1038  awk -f awkscripts/replace-empty-awk data/b_no_decimal.csv > data/b_clean.csv
+ 1059  awk -f awkscripts/education-awk data/b_clean.csv > b_ed.dat
+ 1061  awk -f awkscripts/self-score-awk data/b_clean.csv > b_self.dat
+ 1063  awk -f awkscripts/phil-score-awk data/b_clean.csv > b_phil.dat
+
+b_clean.csv contains the billionaires dataset with no decimals and "Unknown" in place of empty entries.
+For reference to awk scripts or data files, check included folders.

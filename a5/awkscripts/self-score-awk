@@ -1,0 +1,15 @@
+BEGIN {
+   FS = ","
+   FPAT = "([^,]+)|(\"[^\"]+\")"
+   OFS = ","
+}
+NR > 1 {
+   scores[$12]++
+}
+END {
+   for (i in scores) {
+      if (i == "Unknown")
+         continue
+      print i, scores[i]
+   }
+}
